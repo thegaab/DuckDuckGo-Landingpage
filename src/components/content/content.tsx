@@ -25,7 +25,7 @@ import { CircleArrowRight } from 'lucide-react'
 import { FaAppStore, FaDownload, FaGooglePlay} from 'react-icons/fa'
 import { FaStar } from 'react-icons/fa6'
 import Accordion from '../accordion/accordion'
-import Footer from '../footer/footer'
+import Footer from '@/components/footer/footer'
 
 const Content = () => {
   return (
@@ -182,7 +182,7 @@ const Content = () => {
         <div className="w-full flex justify-center m-0 p-0">
           <Image src={flames} alt="orbits icons" className="w-full h-auto object-cover" />
         </div>
-        <div className="bg-gradient-to-b from-[#FFD43F] via-[#FE8F3F] via-[#46008B] to-[#2B0055] w-full flex flex-col justify-center items-center p-0 m-0">
+        <div className="bg-gradient-to-b from-[#FFD43F] via-[#FE8F3F] via-[#46008B] via-[#2B0055] to-[#2B0055] w-full flex flex-col justify-center items-center p-0 m-0">
           <h2 className="text-center text-black text-6xl font-bold w-1/2 pt-20 pb-10">
             Get the same Internet, but with more privacy.
           </h2>
