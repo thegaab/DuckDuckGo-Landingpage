@@ -17,6 +17,10 @@ import miniicon3 from '@/Assets/mini-icon-3.png'
 import flames from '@/Assets/flames.png'
 import flameicon from '@/Assets/flame-icon.png'
 import nighticon from '@/Assets/night-icon.png'
+import wired from '@/Assets/wired-logo.png'
+import verge from '@/Assets/verge-logo.png'
+import usaToday from '@/Assets/USAToday-logo.png'
+import cnet from '@/Assets/CNet-logo.png'
 import { CircleArrowRight } from 'lucide-react'
 import { FaAppStore, FaDownload, FaGooglePlay} from 'react-icons/fa'
 import { FaStar } from 'react-icons/fa6'
@@ -276,8 +280,8 @@ const Content = () => {
                   protecting your data online.
                 </h3>
                 <div className=" flex flex-grow justify-between items-end">
-                  <p>Wired</p>
-                  <CircleArrowRight className='text-white/65' strokeWidth='2'/>
+                <Image src={wired} alt="website icon" className="w-20"/>
+                  <CircleArrowRight className='text-white/65 -rotate-45' strokeWidth='2'/>
                 </div>
               </div>
             </div>
@@ -291,8 +295,8 @@ const Content = () => {
                   protecting your data online.
                 </h3>
                 <div className=" flex flex-grow justify-between">
-                  <p>Wired</p>
-                  <CircleArrowRight className='text-white/65' strokeWidth='2'/>
+                  <Image src={verge} alt="website icon" className="w-20" />
+                  <CircleArrowRight className='text-white/65 -rotate-45' strokeWidth='2'/>
                 </div>
               </div>
             </div>
@@ -306,8 +310,8 @@ const Content = () => {
                   protecting your data online.
                 </h3>
                 <div className=" flex flex-grow justify-between">
-                  <p>Wired</p>
-                  <CircleArrowRight className='text-white/65' strokeWidth='2'/>
+                <Image src={usaToday} alt="website icon" className="w-16"/>
+                  <CircleArrowRight className='text-white/65 -rotate-45' strokeWidth='2'/>
                 </div>
               </div>
             </div>
@@ -321,8 +325,8 @@ const Content = () => {
                   protecting your data online.
                 </h3>
                 <div className=" flex flex-grow justify-between">
-                  <p>Wired</p>
-                  <CircleArrowRight className='text-white/65' strokeWidth='2'/>
+                  <Image src={cnet} alt="website icon" className="w-11" />
+                  <CircleArrowRight className='text-white/65 -rotate-45' strokeWidth='2'/>
                 </div>
               </div>
             </div>
