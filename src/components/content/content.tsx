@@ -345,29 +345,41 @@ const Content = () => {
                   we don’t track your searches or browsing history, and we block other companies from trying
                   to track you, all by default. Learn more.</p>
               </Accordion>
-              <Accordion title="How does DuckDuckGo protect my privacy?2">
-                <p>How does DuckDuckGo protect my privacy?</p>
+              <Accordion title="How does DuckDuckGo protect my privacy?">
+                <p>DuckDuckGo is an independent alternative to Google that also lets you search and browse the web, but we don’t track your searches or browsing history, and our <span> className="text-indigo-500"browsers</span> and <span className="text-indigo-500">extensions</span> help block other companies from tracking you, all by default. Our browser comes with built-in privacy protection, including <span className="text-indigo-500">tracker blocking</span> , <span className="text-indigo-500">enhanced encryption</span> , <span className="text-indigo-500">Email Protection</span> , and more.<span className='text-indigo-500'> Learn more</span></p>
               </Accordion>
               <Accordion title="Does DuckDuckGo block all trackers on websites I visit?">
-                <p>Does DuckDuckGo block all trackers on websites I visit?</p>
+                <p>DuckDuckGo never tracks you . And when you leave our search engine and use our browsers or extensions to visit other sites, we aim to protect your privacy as much as possible. No service can eliminate all hidden tracking or online profiling, as trackers are always trying to evade specific protections. To be effective, our protections are continually evolving to mitigate this while also preventing sites from becoming inoperable. This is also why we offer several types of protections against web tracking .
+
+                Other browsers offer some of these protections by default, such as cookie and fingerprinting protections, but we also offer many other protections that most browsers don't offer by default, such as 3rd-Party Tracker Loading Protection , Global Privacy Control , Link Tracking Protection , CNAME Cloaking Protection , Google AMP Protection , and more , which help cover different types of tracking. Our list of trackers is open source, as is the list of exceptions we've compiled to preserve usability. Learn more</p>
               </Accordion>
               <Accordion title="How many people use DuckDuckGo?">
-                <p>How many people use DuckDuckGo?</p>
+                <p>Our best guess — over 100 million people! We don’t track our users, so it’s impossible to know for sure how many people actually use our product. However, we can estimate based on the number of searches we receive each month. Thanks to all these users, DuckDuckGo has the <span className="text-indigo-500">second largest mobile search market share</span> in the United States and 20 other markets, including Australia, Canada, Spain, Italy, Poland, and the United Kingdom.</p>
               </Accordion>
               <Accordion title="How does DuckDuckGo make money?">
-                <p>How does DuckDuckGo make money?</p>
+                <p>We make money from private ads on our search engine. On other search engines, ads are based on profiles compiled from personal information, such as your search, browsing, and purchase history. We don’t have this information (per our <span className="text-indigo-500">Privacy Policy</span> ) because search ads on DuckDuckGo are based on the search results page you’re looking at, not what other companies’ tracking algorithms assume about you. For example, if you search for cars, we’ll show you ads about cars. We also make money from the subscription fee users pay to access <span className="text-indigo-500">Privacy Pro</span> , our three-in-one subscription service. <span className="text-indigo-500">Learn more</span></p>
               </Accordion>
               <Accordion title="Why use DuckDuckGo instead of Google?">
-                <p>Why use DuckDuckGo instead of Google?</p>
+                <p><span className='font-bold'>Use DuckDuckGo to stay private online.</span> Have you ever seen ads so creepy it feels like your phone is spying on you? Or ads that keep following you around with something you once searched for? Whose responsibility is that? Probably Google. Google has been tracking your searches for decades by embedding trackers in its Chrome browser and hiding even more trackers on its most popular websites.
+
+                In contrast, our browser lets you search and browse as usual, but (unlike Google) we never track you. In addition, our browser helps block trackers from Google and other companies that operate other online tracking networks, such as TikTok and Meta (Facebook).
+
+                <span className='font-bold'>Use DuckDuckGo to enjoy a better online experience.</span> Have you noticed that Google’s search results are getting worse? A lot of people have . For many Google searches, the majority of results on the first page are either ads or Google promoting its own services. On mobile devices, it can be even worse.
+
+                At DuckDuckGo, we keep ads to a minimum and our search ads are private, based only on the search results page you’re viewing, not on you as a person. By default, our browser’s built-in tracker blocking also blocks many ads that rely on trackers from loading. Along with other browser features like automatic cookie pop-up blocking , our default web tracking protections provide an overall cleaner online experience with DuckDuckGo.
+
+                <span className='font-bold'>Use DuckDuckGo to send a message to Big Tech, the big tech companies like Google that are taking away people’s power of choice online and profiting from stealing your personal information.</span> Google is the epitome of Big Tech, with its tentacles in everything, compiling detailed profiles on everyone and making billions of dollars auctioning off access to your attention. And for what? Creepy ads that follow you around? In comparison, DuckDuckGo is a small, independent company based in Paoli, Pennsylvania, with a vision to provide a more private, no-strings-attached online experience for everyone.
+
+                Use DuckDuckGo because it's fast and secure, because it's a free alternative to Google that lets you search and browse the way you want, and because it puts you back in control of your personal data.</p>
               </Accordion>
               <Accordion title="Is Incognito mode private?">
-                <p>Is Incognito mode private?</p>
+                <p>No. It's a myth that you can't be tracked when you use so-called "incognito" mode. In fact, all incognito mode does is erase information on your computer. Incognito mode doesn't stop Google from saving your searches, nor does it stop companies, internet service providers, or governments from tracking you online. On the other hand, DuckDuckGo Search never keeps your search history or anyone else's, and the DuckDuckGo browser also helps keep websites private. <span className="text-indigo-500">Learn more</span></p>
               </Accordion>
               <Accordion title="How do DuckDuckGo Search results compare to Google's?">
-                <p>How do DuckDuckGo Search results compare to Google's?</p>
+                <p>DuckDuckGo Search gives you truly private search results without compromising on the quality of the results. We have everything you’d expect from an online search experience (images, maps, answers, etc.), and since there’s no search history on DuckDuckGo, you’ll escape the filter bubble of manipulated results. You’ll also get access to <span className="text-indigo-500">bonus features</span> that make our private search engine more convenient and a little more fun. We’re <span className="text-indigo-500">always improving</span> , so you can expect even more improvements to search in the coming year! <span className="text-indigo-500">Learn more</span></p>
               </Accordion>
               <Accordion title="Is DuckDuckGo owned by Google or any other entity?">
-                <p>Is DuckDuckGo owned by Google or any other entity?</p>
+                <p>No, we are not and have never been owned by Google or any other entity. We have been an independent company since our founding in 2008. We also do not get any of our search results from Google. You may have noticed that we offer a Google Chrome extension and a Google Android app, but these are also not a partnership with Google and are intended to protect you from Google's online trackers. <span className="text-indigo-500">Learn more</span></p>
               </Accordion>
             </div>
           </div>

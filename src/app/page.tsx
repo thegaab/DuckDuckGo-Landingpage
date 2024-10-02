@@ -1,5 +1,4 @@
 import Content from "@/components/content/content";
-import Footer from "@/components/footer/footer";
 import Main from "@/components/main/main";
 import Navbar from "@/components/navbar/navbar";
 import { CircleArrowDown } from "lucide-react";
