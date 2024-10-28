@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 # DuckDuckGo Clone
 Este é um clone da página principal do DuckDuckGo, criado com Next.js e tailwindcss
 
-Confira o [projeto](https://).
+Confira o [projeto](https://duck-duck-go-landingpage.vercel.app/).
 
 ### Tecnologias Utilizadas
 - Framework: Next.js
