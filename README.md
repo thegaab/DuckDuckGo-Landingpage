@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+![Logo DuckDuckGo](https://play-lh.googleusercontent.com/iJIbQRW7dgxfrlvBP_0vAz3L-ekf5DgWJQEpyHE06dklBBZ0Lo486IMYXiUISHrXrOsx=w416-h235-rw)
+
+
+# DuckDuckGo Clone
+Este é um clone da página principal do DuckDuckGo, criado com Next.js e tailwindcss
+
+Confira o [projeto](https://).
+
+### Tecnologias Utilizadas
+- Framework: Next.js
+- Linguagem: TypeScript
+- Fontes: Projeto usa next/font para otimizar e carregar automaticamente a fonte Geist, da Vercel
+- CSS framework: TailwindCss
+
 ## Getting Started
 
 First, run the development server:
