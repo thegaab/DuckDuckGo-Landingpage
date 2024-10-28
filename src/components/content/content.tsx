@@ -26,29 +26,28 @@ import { FaAppStore, FaDownload, FaGooglePlay} from 'react-icons/fa'
 import { FaStar } from 'react-icons/fa6'
 import Accordion from '../accordion/accordion'
 import Footer from '@/components/footer/footer'
+import accordionData from '@/Assets/mocks/mockup.json'
+import mockup from '@/Assets/mocks/mockup.json'
 
 const Content = () => {
   return (
     <div className="flex flex-col h-full w-full">
       <div className='flex flex-grow justify-around items-center m-24'>
-          <div className="mr-65 max-w-[30%]">
-              <h2 className='text-4xl font-bold'>One super⚡charged app, mutiple types of privacy protection</h2>
-              <h3 className='text-base font-normal'>The DuckDuckGo app includes our Web and App Tracking
-              Protection, Smarter Encryption, Private Search, Email
-              Protection, and more.</h3>
-              <h4 className='text-xs font-light'>See app listings for platform-specific details: iOS, Android, Firefox, Chrome, Edge, and Safari.</h4>
-          </div>
-          <div className="">
-              <Image src={section1} alt='orbits icons' width={600}/>
-          </div>
+        <div className="mr-65 max-w-[30%]">
+          <h2 className='text-4xl font-bold'>{mockup.sections.section1.title}</h2>
+          <h3 className='text-base font-normal'>{mockup.sections.section1.subtitle}</h3>
+          <h4 className='text-xs font-light'>{mockup.sections.section1.details}</h4>
+        </div>
+        <div>
+          <Image src={section1} alt='orbits icons' width={600} />
+        </div>
       </div>
       <div className='flex flex-grow justify-around items-center m-24'>
           <div className="mr-65 max-w-[30%]">
-            <h5 className='text-xs font-mono text-orange-50/70'>SEARCH PROTETION</h5>
-              <h2 className='text-4xl font-bold'>Search without being tracked.</h2>
-              <h3 className='text-base font-normal'>Other search engines track your every search, from
-              where you go to what you buy. We don't track you. Ever.</h3>
-              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/> Learn more</h3>
+            <h5 className='text-xs font-mono text-orange-50/70'>{mockup.sections.section2.title}</h5>
+              <h2 className='text-4xl font-bold'>{mockup.sections.section2.subtitle}</h2>
+              <h3 className='text-base font-normal'>{mockup.sections.section2.label}</h3>
+              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/>{mockup.sections.section2.linkText}</h3>
               
           </div>
           <div className="">
@@ -57,10 +56,10 @@ const Content = () => {
       </div>
       <div className='flex flex-grow justify-around items-center m-24'>
           <div className="order-2 mr-65 max-w-[30%]">
-              <h5 className='text-xs font-mono text-orange-50/70'>Web Tracking Protection</h5>
-              <h2 className='text-4xl font-bold mb-2'>Stop creepy tracking from Facebook and Google.</h2>
-              <h3 className='text-base font-normal mb-2'>DuckDuckGo's powerful tracker blocking stops most trackers before they even load, evading hidden data collectors and speeding up websites.</h3>
-              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/> Learn more</h3>
+              <h5 className='text-xs font-mono text-orange-50/70'>{mockup.sections.section3.label}</h5>
+              <h2 className='text-4xl font-bold mb-2'>{mockup.sections.section3.title}</h2>
+              <h3 className='text-base font-normal mb-2'>{mockup.sections.section3.subtitle}</h3>
+              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/>{mockup.sections.section3.linkText}</h3>
           </div>
           <div className="order-1">
               <Image src={section3} alt='orbits icons' width={600} />
@@ -68,13 +67,11 @@ const Content = () => {
       </div>
       <div className='flex flex-grow justify-around items-center m-24'>
           <div className="order-1 mr-65 max-w-[30%]">
-              <h5 className='text-xs font-mono text-orange-50/70'>App Tracking Protection</h5>
-              <h2 className='text-4xl font-bold mb-2'>Intercept and remove email trackers.<span className='bg-amber-400 p-0.5 rounded-lg text-xs font-bold text-zinc-950 ml-2 px-2 py-1'>BETA!</span></h2>
-              <h3 className='text-base font-normal mb-2'>85% of emails sent through Duck Addresses contained
-                hidden email trackers before we stripped them out. Email
-                Protection zaps most trackers and forwards email to your
-                regular inbox so you can read in peace.</h3>
-              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/> Learn more</h3>
+              <h5 className='text-xs font-mono text-orange-50/70'>{mockup.sections.section4.label}</h5>
+              <h2 className='text-4xl font-bold mb-2'>{mockup.sections.section4.title}
+                <span className='bg-amber-400 p-0.5 rounded-lg text-xs font-bold text-zinc-950 ml-2 px-2 py-1'>{mockup.sections.section4.beta}</span></h2>
+              <h3 className='text-base font-normal mb-2'>{mockup.sections.section4.subtitle}</h3>
+              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/>{mockup.sections.section4.linkText}</h3>
           </div>
           <div className="order-2">
               <Image src={section4} alt='orbits icons' width={600} />
@@ -82,13 +79,10 @@ const Content = () => {
       </div>
       <div className='flex flex-grow justify-around items-center m-24'>
           <div className="order-2 mr-65 max-w-[30%]">
-              <h5 className='text-xs font-mono text-orange-50/70'>App Tracking Protection</h5>
-              <h2 className='text-4xl font-bold mb-2'>Block app trackers, day or night.<span className='bg-amber-400 p-0.5 rounded-lg text-xs font-bold text-zinc-950 ml-2 px-2 py-1'>BETA!</span></h2>
-              <h3 className='text-base font-normal mb-2'>Over 96% of popular free Android apps we tested allow
-                other companies to invade your privacy, like using your
-                location to map everywhere you go. Stop most of their
-                spying and take back control on Android!</h3>
-              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/> Learn more</h3>
+              <h5 className='text-xs font-mono text-orange-50/70'>{mockup.sections.section5.label}</h5>
+              <h2 className='text-4xl font-bold mb-2'>{mockup.sections.section5.title}<span className='bg-amber-400 p-0.5 rounded-lg text-xs font-bold text-zinc-950 ml-2 px-2 py-1'>{mockup.sections.section5.beta}</span></h2>
+              <h3 className='text-base font-normal mb-2'>{mockup.sections.section5.subtitle}</h3>
+              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/>{mockup.sections.section5.linkText}</h3>
           </div>
           <div className="order-1">
               <Image src={section5} alt='orbits icons' width={600} />
@@ -96,46 +90,35 @@ const Content = () => {
       </div>
       <div className='flex flex-grow justify-around items-center m-24'>
           <div className="order-2 mr-65 max-w-[30%]">
-              <h5 className='text-xs font-mono text-orange-50/70'>App Tracking Protection</h5>
-              <h2 className='text-4xl font-bold mb-2'>Google, Facebook, and other companies make your personal data their product.
+              <h5 className='text-xs font-mono text-orange-50/70'>{mockup.midsection.label}</h5>
+              <h2 className='text-4xl font-bold mb-2'>{mockup.midsection.title}
               </h2>
-              <h3 className='text-base font-normal mb-2'>Even everyday online activities like purchasing
-                groceries or looking up the local weather can result
-                in dozens of companies tracking you.</h3>
-              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/> Learn more</h3>
+              <h3 className='text-base font-normal mb-2'>{mockup.midsection.subtitle}</h3>
+              <h3 className='flex flex-grow text-sky-700'><CircleArrowRight className='-rotate-45 mr-2'/>{mockup.midsection.linkText}</h3>
           </div>
           
           <div className="flex flex-col justify-center items-start">
             <div className="flex flex-grow justify-center">
                 <div className="bg-white/25 rounded-md w-36 h-40 m-2 h-120 p-3">
                   <Image src={miniicon1} alt='website icon' className='w-10 pb-1' />
-                  <h3 className='text-xl font-bold'>85%</h3>
-                  <h6 className='text-sm font-normal'>of popular sites
-                    have third-party
-                    trackers.</h6>
+                  <h3 className='text-xl font-bold'>{mockup.midsection.statistics[0].percentage1}</h3>
+                  <h6 className='text-sm font-normal'>{mockup.midsection.statistics[0].description1}</h6>
                 </div>
                 <div className="bg-white/25 rounded-md w-36 h-40 m-2 h-120 p-3">
                   <Image src={miniicon2} alt='website icon' className='w-10 pb-1' />
-                  <h3 className='text-xl font-bold'>85%</h3>
-                  <h6 className='text-sm font-normal'>of emails have
-                    third-party
-                    trackers.</h6>
+                  <h3 className='text-xl font-bold'>{mockup.midsection.statistics[1].percentage2}</h3>
+                  <h6 className='text-sm font-normal'>{mockup.midsection.statistics[1].description2}</h6>
                 </div>
                 <div className="bg-white/25 rounded-md w-36 h-40 m-2 h-120 p-3">
                   <Image src={miniicon3} alt='website icon' className='w-10 pb-1' />
-                  <h3 className='text-xl font-bold'>96%</h3>
-                  <h6 className='text-sm font-normal'>of popular
-                    Android apps
-                    have third-party
-                    trackers.</h6>
+                  <h3 className='text-xl font-bold'>{mockup.midsection.statistics[2].percentage3}</h3>
+                  <h6 className='text-sm font-normal'>{mockup.midsection.statistics[2].description3}.</h6>
                 </div>
             </div>
             <div className="mr-65 max-w-[40%]">
-              <h3 className='text-base font-bold mb-2'>Trackers lurk nearly everywhere.</h3>
-              <p className='text-sm font-normal'>Trackers can pick up your location history, search history,
-                  browsing history, and more, inferring your age, ethnicity,
-                  gender, interests, and habits.</p>
-                <h5 className='text-xs font-mono text-orange-50/70'>† Based on research for Web, Email, Apps.</h5>
+              <h3 className='text-base font-bold mb-2'>{mockup.midsection.additionalInfo.title}</h3>
+              <p className='text-sm font-normal'>T{mockup.midsection.additionalInfo.description}</p>
+                <h5 className='text-xs font-mono text-orange-50/70'>{mockup.midsection.additionalInfo.note}</h5>
             </div>
           </div>
       </div>
@@ -147,12 +130,8 @@ const Content = () => {
               </div>
             </div>
             <div className="mr-65 max-w-[40%]">
-              <h3 className='text-base font-normal mb-2'>They auction off your data to the highest bidder.</h3>
-              <p className='text-sm font-normal'>Companies use your data to create detailed profiles about you
-                that even include info on your friends and families. This lets
-                companies follow us around with ads so creepy it can seem
-                like our devices are listening in on our conversations (even
-                when they aren't).</p>
+              <h3 className='text-base font-normal mb-2'>{mockup.sections.section6.title}</h3>
+              <p className='text-sm font-normal'>{mockup.sections.section6.description}</p>
             </div>
         </div>
           <div className="flex flex-col justify-center items-start">
@@ -162,11 +141,8 @@ const Content = () => {
               </div>
             </div>
             <div className="mr-65 max-w-[40%]">
-              <h3 className='text-base font-bold mb-2'>They're doing more than just following you around
-              with creepy ads.</h3>
-              <p className='text-sm font-normal'>These profiles are used to influence what you see online, and
-                can lead to manipulation and discrimination based on what
-                they know about you.</p>
+              <h3 className='text-base font-bold mb-2'>{mockup.sections.section7.title}</h3>
+              <p className='text-sm font-normal'>{mockup.sections.section7.description}</p>
             </div>
           </div>
       </div>
@@ -192,14 +168,17 @@ const Content = () => {
               <div className="flex justify-center items-center bg-white/75 rounded-md w-[450px] h-[270px]">
                 <Image src={section8} alt="website icon" className="p-3" />
               </div>
-              <div className="flex bg-white/75 rounded-md w-[450px] h-[317px] justify-center items-center">
-                <div className="flex flex-col text-black text-center">
-                  <h3 className="p-2 font-semibold text-black/65">Voice Search, Favorites, Downloads</h3>
-                  <h3 className="p-2 font-semibold text-black/65">Bookmarks, Smarter Encryption</h3>
-                  <h3 className="text-xl font-extrabold">Tracker Blocking</h3>
-                  <h3 className="p-2 font-semibold text-black/65">Local search! Bang shortcuts</h3>
-                  <h3 className="p-2 font-semibold text-black/65">App Lock, Custom Themes, Maps</h3>
-                </div>
+              <div className="flex flex-col bg-white/75 rounded-md w-[450px] h-[317px] justify-center items-center">
+              {mockup.sections.section8.content.map((text, index) => (
+                    <h3
+                      key={index}
+                      className={`p-2 font-semibold text-black/65 ${
+                        text === "Tracker Blocking" ? "text-xl font-extrabold text-black" : ""
+                      }`}
+                    >
+                      {text}
+                    </h3>
+                  ))}
               </div>
             </div>
 
@@ -275,11 +254,7 @@ const Content = () => {
             <div className="bg-black/30 rounded-md w-[255px]">
               <div className="p-4">
                 <h3 className='text-white/80 text-xs mb-4'>
-                  The company best known for
-                  its search engine is launching a
-                  new set of tools aimed at
-                  creating an ‘easy button’ for
-                  protecting your data online.
+                  {mockup.miniCards[0].text1}
                 </h3>
                 <div className=" flex flex-grow justify-between items-end">
                 <Image src={wired} alt="website icon" className="w-20"/>
@@ -290,11 +265,7 @@ const Content = () => {
             <div className="bg-black/30 rounded-md w-[255px]">
               <div className="p-4">
                 <h3 className='text-white/80 text-xs mb-4'>
-                  The company best known for
-                  its search engine is launching a
-                  new set of tools aimed at
-                  creating an ‘easy button’ for
-                  protecting your data online.
+                  {mockup.miniCards[1].text2}
                 </h3>
                 <div className=" flex flex-grow justify-between">
                   <Image src={verge} alt="website icon" className="w-20" />
@@ -305,11 +276,7 @@ const Content = () => {
             <div className="bg-black/30 rounded-md w-[255px]">
               <div className="p-4">
                 <h3 className='text-white/80 text-xs mb-4'>
-                  The company best known for
-                  its search engine is launching a
-                  new set of tools aimed at
-                  creating an ‘easy button’ for
-                  protecting your data online.
+                  {mockup.miniCards[2].text3}
                 </h3>
                 <div className=" flex flex-grow justify-between">
                 <Image src={usaToday} alt="website icon" className="w-16"/>
@@ -320,11 +287,7 @@ const Content = () => {
             <div className="bg-black/30 rounded-md w-[255px]">
               <div className="p-4">
                 <h3 className='text-white/80 text-xs mb-4'>
-                  The company best known for
-                  its search engine is launching a
-                  new set of tools aimed at
-                  creating an ‘easy button’ for
-                  protecting your data online.
+                  {mockup.miniCards[3].text4}
                 </h3>
                 <div className=" flex flex-grow justify-between">
                   <Image src={cnet} alt="website icon" className="w-11" />
@@ -338,49 +301,11 @@ const Content = () => {
               <h2 className='text-2xl font-bold mt-10'>Still have questions?</h2>
             </div>
             <div className="max-w-md mt-10">
-              <Accordion title="What is DuckDuckGo?" isFirst>
-                <p>DuckDuckGo is an independent Internet privacy company that aims to make getting privacy
-                  simple and accessible for everyone. Our free web browser for iOS, Android, Mac, and
-                  Windows lets you search and browse the web, but — unlike Google Search and Chrome —
-                  we don’t track your searches or browsing history, and we block other companies from trying
-                  to track you, all by default. Learn more.</p>
-              </Accordion>
-              <Accordion title="How does DuckDuckGo protect my privacy?">
-                <p>DuckDuckGo is an independent alternative to Google that also lets you search and browse the web, but we don’t track your searches or browsing history, and our <span> className="text-indigo-500"browsers</span> and <span className="text-indigo-500">extensions</span> help block other companies from tracking you, all by default. Our browser comes with built-in privacy protection, including <span className="text-indigo-500">tracker blocking</span> , <span className="text-indigo-500">enhanced encryption</span> , <span className="text-indigo-500">Email Protection</span> , and more.<span className='text-indigo-500'> Learn more</span></p>
-              </Accordion>
-              <Accordion title="Does DuckDuckGo block all trackers on websites I visit?">
-                <p>DuckDuckGo never tracks you . And when you leave our search engine and use our browsers or extensions to visit other sites, we aim to protect your privacy as much as possible. No service can eliminate all hidden tracking or online profiling, as trackers are always trying to evade specific protections. To be effective, our protections are continually evolving to mitigate this while also preventing sites from becoming inoperable. This is also why we offer several types of protections against web tracking .
-
-                Other browsers offer some of these protections by default, such as cookie and fingerprinting protections, but we also offer many other protections that most browsers don't offer by default, such as 3rd-Party Tracker Loading Protection , Global Privacy Control , Link Tracking Protection , CNAME Cloaking Protection , Google AMP Protection , and more , which help cover different types of tracking. Our list of trackers is open source, as is the list of exceptions we've compiled to preserve usability. Learn more</p>
-              </Accordion>
-              <Accordion title="How many people use DuckDuckGo?">
-                <p>Our best guess — over 100 million people! We don’t track our users, so it’s impossible to know for sure how many people actually use our product. However, we can estimate based on the number of searches we receive each month. Thanks to all these users, DuckDuckGo has the <span className="text-indigo-500">second largest mobile search market share</span> in the United States and 20 other markets, including Australia, Canada, Spain, Italy, Poland, and the United Kingdom.</p>
-              </Accordion>
-              <Accordion title="How does DuckDuckGo make money?">
-                <p>We make money from private ads on our search engine. On other search engines, ads are based on profiles compiled from personal information, such as your search, browsing, and purchase history. We don’t have this information (per our <span className="text-indigo-500">Privacy Policy</span> ) because search ads on DuckDuckGo are based on the search results page you’re looking at, not what other companies’ tracking algorithms assume about you. For example, if you search for cars, we’ll show you ads about cars. We also make money from the subscription fee users pay to access <span className="text-indigo-500">Privacy Pro</span> , our three-in-one subscription service. <span className="text-indigo-500">Learn more</span></p>
-              </Accordion>
-              <Accordion title="Why use DuckDuckGo instead of Google?">
-                <p><span className='font-bold'>Use DuckDuckGo to stay private online.</span> Have you ever seen ads so creepy it feels like your phone is spying on you? Or ads that keep following you around with something you once searched for? Whose responsibility is that? Probably Google. Google has been tracking your searches for decades by embedding trackers in its Chrome browser and hiding even more trackers on its most popular websites.
-
-                In contrast, our browser lets you search and browse as usual, but (unlike Google) we never track you. In addition, our browser helps block trackers from Google and other companies that operate other online tracking networks, such as TikTok and Meta (Facebook).
-
-                <span className='font-bold'>Use DuckDuckGo to enjoy a better online experience.</span> Have you noticed that Google’s search results are getting worse? A lot of people have . For many Google searches, the majority of results on the first page are either ads or Google promoting its own services. On mobile devices, it can be even worse.
-
-                At DuckDuckGo, we keep ads to a minimum and our search ads are private, based only on the search results page you’re viewing, not on you as a person. By default, our browser’s built-in tracker blocking also blocks many ads that rely on trackers from loading. Along with other browser features like automatic cookie pop-up blocking , our default web tracking protections provide an overall cleaner online experience with DuckDuckGo.
-
-                <span className='font-bold'>Use DuckDuckGo to send a message to Big Tech, the big tech companies like Google that are taking away people’s power of choice online and profiting from stealing your personal information.</span> Google is the epitome of Big Tech, with its tentacles in everything, compiling detailed profiles on everyone and making billions of dollars auctioning off access to your attention. And for what? Creepy ads that follow you around? In comparison, DuckDuckGo is a small, independent company based in Paoli, Pennsylvania, with a vision to provide a more private, no-strings-attached online experience for everyone.
-
-                Use DuckDuckGo because it's fast and secure, because it's a free alternative to Google that lets you search and browse the way you want, and because it puts you back in control of your personal data.</p>
-              </Accordion>
-              <Accordion title="Is Incognito mode private?">
-                <p>No. It's a myth that you can't be tracked when you use so-called "incognito" mode. In fact, all incognito mode does is erase information on your computer. Incognito mode doesn't stop Google from saving your searches, nor does it stop companies, internet service providers, or governments from tracking you online. On the other hand, DuckDuckGo Search never keeps your search history or anyone else's, and the DuckDuckGo browser also helps keep websites private. <span className="text-indigo-500">Learn more</span></p>
-              </Accordion>
-              <Accordion title="How do DuckDuckGo Search results compare to Google's?">
-                <p>DuckDuckGo Search gives you truly private search results without compromising on the quality of the results. We have everything you’d expect from an online search experience (images, maps, answers, etc.), and since there’s no search history on DuckDuckGo, you’ll escape the filter bubble of manipulated results. You’ll also get access to <span className="text-indigo-500">bonus features</span> that make our private search engine more convenient and a little more fun. We’re <span className="text-indigo-500">always improving</span> , so you can expect even more improvements to search in the coming year! <span className="text-indigo-500">Learn more</span></p>
-              </Accordion>
-              <Accordion title="Is DuckDuckGo owned by Google or any other entity?">
-                <p>No, we are not and have never been owned by Google or any other entity. We have been an independent company since our founding in 2008. We also do not get any of our search results from Google. You may have noticed that we offer a Google Chrome extension and a Google Android app, but these are also not a partnership with Google and are intended to protect you from Google's online trackers. <span className="text-indigo-500">Learn more</span></p>
-              </Accordion>
+              {accordionData.accordionItems.map((item, index) => (
+                <Accordion key={index} title={item.title} isFirst={index === 0}>
+                  <p dangerouslySetInnerHTML={{ __html: item.content }} />
+                </Accordion>
+              ))}
             </div>
           </div>
           
